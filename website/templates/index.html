@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BeigeDB | Search</title>
+    
+    <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+    
+    <link rel="stylesheet" href={{ url_for('static', filename='reset.css') }} type="text/css">
+    <link rel="stylesheet" href={{ url_for('static', filename='style.css') }} type="text/css">
+
+    <link rel="shortcut icon" type="image/png" href={{ url_for('static', filename='img/favicon.png') }}/>
+        
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    
+    <!-- *********  Header  ********** -->
+    
+    <div id="header">
+        <div id="header_in">
+        
+        <h1><a href="index.html"><b>Beige</b>DB</a></h1>
+        
+        <div id="menu">
+         <ul>
+            <li><a href="index.html" class="active">Search</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="analysis.html">Analysis</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="code.html">Code</a></li>            
+         </ul>
+        </div>
+        
+        </div>
+    </div>
+    
+    <!-- *********  Main part (slider)  ********** -->
+    
+        
+        <div id="main_part">
+            <div id="main_part_in">
+        
+            <h2>BeigeDB</h2>
+            
+            <p>The Federal Reserve right at your fingertips</p>
+            
+            </div>
+
+        </div>
+
+    <!-- *********  Content  ********** -->
+    <iframe width="100%" height="100%" frameborder="0"  id="section" src="query.html">
+    </iframe>
+    <!-- *********  Footer  ********** -->
+    
+    <hr class="cleanit">
+    
+     <div id="footer">
+        <div id="footer_in">
+            <p>Ervin Baccay, Dee Guo, Keiko Kamei © 2018</p>
+        </div>
+    </div>
+</body>
+</html>

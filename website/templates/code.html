@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BeigeDB | Code</title>
+    
+    <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+    
+    <link rel="stylesheet" href={{ url_for('static', filename='reset.css') }} type="text/css">
+    <link rel="stylesheet" href={{ url_for('static', filename='style.css') }} type="text/css">
+
+    <link rel="shortcut icon" type="image/png" href={{ url_for('static', filename='img/favicon.png') }}/>
+        
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    
+    <!-- *********  Header  ********** -->
+    
+    <div id="header">
+        <div id="header_in">
+        
+        <h1><a href="index.html"><b>Beige</b>DB</a></h1>
+        
+        <div id="menu">
+         <ul>
+            <li><a href="index.html">Search</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="analysis.html">Analysis</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="code.html" class="active">Code</a></li>            
+         </ul>
+        </div>
+        
+        </div>
+    </div>
+    
+    <!-- *********  Main part – headline ********** -->
+    
+        
+        <div id="main_part_inner">
+            <div id="main_part_inner_in">
+        
+            <h2>Code Specifications</h2>
+            
+            </div>
+            
+        </div>
+        
+        
+        <!-- *********  Content  ********** -->
+        
+        <div id="content_inner">
+            
+            <!-- ***** Out team + portraits ***** -->
+            
+           <h3>How We Did It</h3>
+           
+           <p class="teamline">All scraping, parsing, and analysis was completed using Python 3 and/or a Jupyter Notebook. Many packages were also used such as Selenium for scraping, BeautifulSoup4 for parsing, and the Berkeley <a href="http://data8.org/datascience/" target="_blank">datascience</a> library with Pandas to generate tables. If you would like to view the source code to this public project, all of the material can be found on the BeigeDB <a href="https://github.com/deeguo/beige_books_analysis" target="_blank">GitHub</a>.</p>
+            <p class="teamline">For an even more in-depth analysis on the code as well as any conceptual/underlying ideas regarding anything that we have done, the three BeigeDB data scientists will be creating a paper describing each step in excruciating detail as well possible areas of further analysis. Stay tuned!</p>
+            <p class="teamline">In the meantime, if one would like an even more nuanced and fundamental approach as preparation to construct novel analysis, the team wholeheartedly recommends UC Berkeley's introductory/intermediate Computer Science and Data Science courses such as <a href="https://cs61a.org/" target="_blank">CS 61A</a>, <a href="https://datastructur.es/" target="_blank">CS 61B</a>, <a href="https://data8.org/" target="_blank">Data 8</a>, and <a href="http://ds100.org/" target="_blank">Data 100</a>. </p>
+            <p class="teamline"></p>
+            <p class="teamline"></p>
+            <p class="teamline"></p>
+            <p class="teamline"></p>
+           
+           <hr class="cleanit">
+
+        </div>
+
+    <!-- *********  Footer  ********** -->
+    
+    <hr class="cleanit">
+    
+     <div id="footer">
+        <div id="footer_in">
+            <p>Ervin Baccay, Dee Guo, Keiko Kamei © 2018</p>
+        </div>
+    </div>
+</body>
+</html>

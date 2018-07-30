@@ -1,0 +1,76 @@
+<html>
+<head>
+	<!-- load the bootstrap css here -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+                    <div>
+                            <div class="container">
+                                <br clear="all">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <input class="form-control" type="text" placeholder="Primary Keyword" value="{{speaker}}" id="speaker"/>
+                                        <small>Enter primary keyword of interest</small>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select class="form-control" id="year">
+                                            <option value="">All Years</option>
+                                            {% for year in years %}
+                                            <option value="{{year}}" {% if selected_year == year %}selected{%endif%}>{{year}}</option>
+                                            {% endfor %}
+                                        </select>
+                                        <small>All Beige Books since 1970 included</small>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button style="width:100%;" class="btn btn-primary" id="filter-btn"><b>Search</b></button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button style="width:100%;" class="btn btn-default" id="download-btn"><b>Download</b></button>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-12 text-right">
+                                        <b>{{no_of_records}} Entries Found</b>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <table class="table table-striped thead-dark">
+                                            <thead class="text-center">
+                                                <td>Date</td>
+                                                <td>District</td>
+                                                <td>Sector Heading</td>
+                                                <td>Sector Text</td>
+                                                <td>First Keyword</td>
+                                            </thead>
+                                            <tbody>
+                                                {% if (records is defined) and records %}
+                                                    {% for record in records %}
+                                                        <tr>
+                                                            <td>{{record.date}}</td>
+                                                            <td>{{record.district}}</td>
+                                                            <td>{{record.heading}}</td>
+                                                            <!-- This line shows just the first 100 characters and cuts it after that -->
+                                                            <td>{{record.text[0:100] + " ..."}}</td>
+                                                            <td>{{record.first}}</td>
+                                                        </tr>
+                                                    {% endfor %}
+                                                {% else %}
+                                                <tr>
+                                                    <td colspan="5">No results</td>
+                                                </tr>
+                                                {% endif %}
+                                            </tbody>
+                                        </table>
+                                        <hr>
+                                        <p>This is a sneak peak of your search query!</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src={{ url_for('static', filename='js/innerscript.js') }}></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BeigeDB | About</title>
+    
+    <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+    
+    <link rel="stylesheet" href={{ url_for('static', filename='reset.css') }} type="text/css">
+    <link rel="stylesheet" href={{ url_for('static', filename='style.css') }} type="text/css">
+
+    <link rel="shortcut icon" type="image/png" href={{ url_for('static', filename='img/favicon.png') }}/>
+        
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    
+    <!-- *********  Header  ********** -->
+    
+    <div id="header">
+        <div id="header_in">
+        
+        <h1><a href="index.html"><b>Beige</b>DB</a></h1>
+        
+        <div id="menu">
+         <ul>
+            <li><a href="index.html">Search</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="analysis.html">Analysis</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="code.html">Code</a></li>            
+         </ul>
+        </div>
+        
+        </div>
+    </div>
+    
+    <!-- *********  Main part – headline ********** -->
+    
+        
+        <div id="main_part_inner">
+            <div id="main_part_inner_in">
+        
+            <h2>About the Project</h2>
+            
+            </div>
+            
+        </div>
+        
+        
+        <!-- *********  Content  ********** -->
+        
+        <div id="content_inner">
+            
+            <!-- ***** Out team + portraits ***** -->
+            
+           <h3>The Why</h3>
+           
+           <p class="teamline">BeigeDB is a public queryable database containing the contents of the <a href="https://www.federalreserve.gov/monetarypolicy/beige-book-default.htm" target="_blank">Federal Reserve Beige Books</a>. The Beige Books themselves are reports published by twelve separate districts in the Federal Reserve System. These reports contain a summary of information regarding monetary policy, implementations of such monetary policy, and economic conditions regarding different sectors (agriculture, manufacturing, etc.) within the district.
+            <p class="teamline">Each entry on BeigeDB also contains special keywords that identify the main topic of the summary than can also be used in your query. All queries processed from the compiled database can also be downloaded in a CSV format for ease to people who are using this data.</p>
+            <p class="teamline">This database was created by a research team of three students at UC Berkeley within <a href="https://www.goodlylabs.org/" target="_blank">GoodlyLabs</a> in partnership with the <a href="https://bids.berkeley.edu/" target="_blank">Berkeley Institute for Data Science (BIDS)</a> in the hopes of making hard-to-access/hard-to-parse federal data easily accessible to the public for use in research and similar projects.</p>
+            <p class="teamline">Direction and guidance was provided by members of the GoodlyLabs team such as Nick Adams, Johannes Fritz, Aakriti Kaul, and Eve Mwangi. Thank you for supporting and empowering us to complete this project!</p>
+           
+           <hr class="cleanit">
+            
+            
+            <!-- ***** History, milestones ***** -->           
+           
+        <div class="history_blok">
+            
+            <h3>Project Timeline</h3>
+            <img src={{ url_for('static', filename='design/milestones.png') }} class="milestones">
+                
+                <div class="milestone1">
+                    <h4 class="miles">
+                        <b>2/8/2018</b> <br>
+                        Project start!
+                    </h4>
+                    <p class="descr">On this day, teams were formed and BeigeDB started its production. Dee and Ervin were the first members.</p>
+                </div>
+                
+                <div class="milestone2">
+                    <h4 class="miles">
+                        <b>3/1/2018</b> <br>
+                        Data Mining Complete
+                    </h4>
+                    <p class="descr">After a few weeks of work, all scraping and parsing scripts are completed. Several days later, Keiko joins us!</p>
+                </div>
+                
+                <div class="milestone3">
+                    <h4 class="miles">
+                        <b>4/2/2018</b> <br>
+                        Analysis begins!
+                    </h4>
+                    <p class="descr">After spring break, serious attempts at analysis of collected data begins.</p>
+                </div>
+                
+                <div class="milestone4">
+                    <h4 class="miles">
+                        <b>4/30/2018</b> <br>
+                        Project complete!
+                    </h4>
+                    <p class="descr">The web app in addition to the final presentation as well as various preliminary analyses are completed.</p>
+                </div>
+                
+                <hr class="cleanit">
+            
+        </div>
+
+        </div>
+
+    <!-- *********  Footer  ********** -->
+    
+    <hr class="cleanit">
+    
+     <div id="footer">
+        <div id="footer_in">
+            <p>Ervin Baccay, Dee Guo, Keiko Kamei © 2018</p>
+        </div>
+    </div>
+</body>
+</html>

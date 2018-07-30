@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BeigeDB | Team</title>
+    
+    <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+    
+    <link rel="stylesheet" href={{ url_for('static', filename='reset.css') }} type="text/css">
+    <link rel="stylesheet" href={{ url_for('static', filename='style.css') }} type="text/css">
+
+    <link rel="shortcut icon" type="image/png" href={{ url_for('static', filename='img/favicon.png') }}/>
+        
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    
+    <!-- *********  Header  ********** -->
+    
+    <div id="header">
+        <div id="header_in">
+        
+        <h1><a href="index.html"><b>Beige</b>DB</a></h1>
+        
+        <div id="menu">
+         <ul>
+            <li><a href="index.html">Search</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="analysis.html">Analysis</a></li>
+            <li><a href="team.html" class="active">Team</a></li>
+            <li><a href="code.html">Code</a></li>            
+         </ul>
+        </div>
+        
+        </div>
+    </div>
+    
+    <!-- *********  Main part – headline ********** -->
+    
+        
+        <div id="main_part_inner">
+            <div id="main_part_inner_in">
+        
+            <h2>The Team</h2>
+            
+            </div>
+            
+        </div>
+        
+        
+        <!-- *********  Content  ********** -->
+        
+        <div id="content_inner">
+            
+            <!-- ***** Out team + portraits ***** -->
+            
+           <h3>Behind the scenes:</h3>
+           
+           <p class="teamline">BeigeDB was created by a research team of UC Berkeley students. These students are listed below.</p>
+           
+           <div class="sixths_team">
+                <h4>
+                Data Scientist<br>
+                <span>Project Lead</span><br>
+                Developer<br>
+                </h4>
+                <a href="#"><img src={{ url_for('static', filename='img/teammember1.jpg') }} alt="team4"></a>
+                <a href="#" class="profession">Dee <b>Guo</b></a>
+           </div>
+           
+           <div class="sixths_team">
+                <h4>
+                Data Scientist<br>
+                <span>NLP Specialist</span><br>
+                Developer<br>
+                </h4>
+                <a href="#"><img src={{ url_for('static', filename='img/teammember2.jpg') }} alt="team5"></a>
+                <a href="#" class="profession">Keiko <b>Kamei</b></a>
+           </div>
+           
+           <div class="sixths_team">
+                <h4>
+                Data Scientist<br>
+                <span>Web Designer</span><br>
+                Developer<br>
+                </h4>
+                <a href="#"><img src={{ url_for('static', filename='img/teammember3.jpg') }} alt="team6"></a>
+                <a href="#" class="profession">Ervin <b>Baccay</b></a>
+           </div>
+           
+           <hr class="cleanit">
+
+        </div>
+
+    <!-- *********  Footer  ********** -->
+    
+    <hr class="cleanit">
+    
+     <div id="footer">
+        <div id="footer_in">
+            <p>Ervin Baccay, Dee Guo, Keiko Kamei © 2018</p>
+        </div>
+    </div>
+</body>
+</html>
