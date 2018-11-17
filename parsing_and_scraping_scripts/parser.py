@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup as bs
 import datascience as ds
+#import pandas as pd
 import sys
 import os
 import re
